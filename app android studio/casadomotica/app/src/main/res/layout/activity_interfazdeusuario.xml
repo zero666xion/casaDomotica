@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.estudiantes901.casadomotica.interfazdeusuario">
+
+    <Switch
+        android:id="@+id/IdEncenderInt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/IdEncender"
+        android:layout_marginTop="26dp"
+        android:checked="false"
+        android:text="  LUCES  INTERIORES" />
+
+    <TextView
+        android:id="@+id/Idcontrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Control para la casa deslice los botones para accionar los aparatos"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/IdEncender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Idcontrol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:checked="false"
+        android:text="  LUCES EXTERIORES"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/IdBufferIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="% de agua"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/IdEncenderInt"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/IdDesconectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desconectar"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/Idatm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IdBufferIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Llenado automatico"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/Idmanual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Idatm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="modo manual"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/Idcontrol2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Idatm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="El modo manual requiere tener apagado el llenado automatico" />
+
+</RelativeLayout>
